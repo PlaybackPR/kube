@@ -2,13 +2,14 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: my-nginx
+  name: web-pod
   labels:
-    app: my-nginx
+    app: web
 spec:
   containers:
-    - name: nginx
-      image: nginx
+    - name: web-hw
+      image: playbackpr/web:01
       ports:
         - containerPort: 80
+
 
