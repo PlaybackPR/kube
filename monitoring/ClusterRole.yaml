@@ -17,4 +17,4 @@ rules:
   - ingresses
   verbs: ["get", "list", "watch"]
 - nonResourceURLs: ["/metrics"]
-  verbs: ["get"
+  verbs: ["get"]
