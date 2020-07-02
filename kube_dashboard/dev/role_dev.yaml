@@ -4,9 +4,6 @@ metadata:
   name: dev-role
   namespace: dev
 rules:
-- apiGroups: [""]
-  resources: ["*"]
-  verbs: ["*"]
-- apiGroups: ["extensions"]
+- apiGroups: ["*"]
   resources: ["*"]
   verbs: ["*"]
