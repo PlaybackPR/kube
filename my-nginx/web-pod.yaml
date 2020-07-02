@@ -3,6 +3,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: web-pod
+  namespace: dev
   labels:
     app: web
 spec:
