@@ -8,5 +8,5 @@ roleRef:
   name: cluster-admin
 subjects:
 - kind: ServiceAccount
-  name: dashboard-cluster-admin
+  name: dashboard-kubernetes-admin
   namespace: kubernetes-dashboard
