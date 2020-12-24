@@ -21,4 +21,4 @@ spec:
         - containerPort: 80
           protocol: TCP
       imagePullSecrets:
-        - name: docker-registry.invitro.ru
+        - name: docker-registry
