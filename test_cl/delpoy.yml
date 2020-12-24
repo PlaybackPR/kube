@@ -8,8 +8,6 @@ spec:
   selector:
     matchLabels:
       app: web
-  nodeSelector:
-    workload: worker
   replicas: 1
   template:
     metadata:
