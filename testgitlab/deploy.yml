@@ -1,0 +1,24 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sur_test
+  namespace: staging
+spec:
+  selector:
+    matchLabels:
+      app: surtest
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: surtest
+    spec:
+      containers:
+      - name: sur_test
+        image: harbor.invitro.ru/sur_test:nginx
+        ports:
+        - containerPort: 80
+          protocol: TCP
+      imagePullSecrets:
+        - name: harbor
